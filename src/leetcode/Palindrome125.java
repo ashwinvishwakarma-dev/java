@@ -1,0 +1,32 @@
+package leetcode;
+
+public class Palindrome125 {
+
+    public static void main(String[] args) {
+        System.out.println(isPalindrome("aba,"));
+
+    }
+
+    public static boolean isPalindrome(String s) {
+        int start = 0;
+        int end = s.length() - 1;
+
+        while (start < end) {
+
+            while (start < end && !Character.isLetterOrDigit(s.charAt(start))) {
+                start++;
+            }
+
+            while (start < end && !Character.isLetterOrDigit(s.charAt(end))) {
+                end--;
+            }
+            if (!String.valueOf(s.charAt(start)).equalsIgnoreCase(String.valueOf(s.charAt(end)))) {
+                return false;
+            }
+            start++;
+            end--;
+        }
+        return true;
+
+    }
+}
