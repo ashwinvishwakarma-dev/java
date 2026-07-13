@@ -1,6 +1,6 @@
 package leetcode;
 
-public class ReverseWord {
+public class ReverseWord151 {
     public static void main(String[] args) {
         System.out.println(reverseWords("Hello World"));
     }
