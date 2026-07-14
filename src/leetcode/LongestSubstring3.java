@@ -14,7 +14,6 @@ public class LongestSubstring3 {
         HashSet<Character> set = new HashSet<>();
 
         while (right < s.length()) {
-
             while (set.contains(s.charAt(right))) {
                 set.remove(s.charAt(left));
                 left++;
@@ -22,8 +21,6 @@ public class LongestSubstring3 {
             set.add(s.charAt(right));
             max = Math.max(max, (right - left) + 1);
             right++;
-
-
         }
 
         return max;
