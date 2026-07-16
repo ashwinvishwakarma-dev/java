@@ -1,6 +1,7 @@
 package streamapi;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class LongestName {
@@ -15,7 +16,7 @@ public class LongestName {
         System.out.println(nameCount); // return 7
 
         String longestWord = names.stream()
-                .max((a, b) -> a.length() - b.length())
+                .max(Comparator.comparingInt(String::length))
                 .orElse("");
         System.out.println(longestWord);
     }

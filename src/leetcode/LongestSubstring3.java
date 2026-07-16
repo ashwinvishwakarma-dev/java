@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class LongestSubstring3 {
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring("abccbde"));
+        System.out.println(lengthOfLongestSubstring("aabbcdd"));
     }
 
     private static int lengthOfLongestSubstring(String s) {
