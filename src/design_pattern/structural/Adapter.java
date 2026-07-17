@@ -1,4 +1,4 @@
-package design_pattern.behavioural;
+package design_pattern.structural;
 
 public class Adapter {
     public static void main(String[] args) {
