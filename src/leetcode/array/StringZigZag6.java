@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.array;
 
 public class StringZigZag6 {
     public static void main(String[] args) {

@@ -12,7 +12,7 @@ public class GroupWordByLength {
 
         HashMap<Integer,List<String>> frequency = (HashMap<Integer, List<String>>) words.stream()
                 .collect(Collectors.groupingBy(
-                        word->word.length()
+                        String::length
                 ));
 
         System.out.println(frequency);

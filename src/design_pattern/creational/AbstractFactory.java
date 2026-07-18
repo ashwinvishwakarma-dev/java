@@ -57,7 +57,6 @@ class DarkCheckBox implements CheckBox {
 
 interface ThemeFactory {
     Button createButton();
-
     CheckBox createCheckBox();
 }
 

@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.array;
 
 public class LastWordCount58 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.array;
 
 public class GasStation134 {
     public static void main(String[] args) {

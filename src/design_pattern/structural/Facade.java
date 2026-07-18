@@ -3,8 +3,10 @@ package design_pattern.structural;
 public class Facade {
     public static void main(String[] args) {
 
-        AmazonFacade amazonFacade = new AmazonFacade(new OrderService(), new ShipmentService(),
-                                                        new AnalyticsService(), new EmailService());
+        AmazonFacade amazonFacade = new AmazonFacade(new OrderService(),
+                                                     new ShipmentService(),
+                                                     new AnalyticsService(),
+                                                     new EmailService());
 
         amazonFacade.amazonOrder();
     }
@@ -17,8 +19,10 @@ class AmazonFacade {
     AnalyticsService analyticsService;
     EmailService emailService;
 
-    AmazonFacade(OrderService orderService, ShipmentService shipmentService,
-                 AnalyticsService analyticsService, EmailService emailService) {
+    AmazonFacade(OrderService orderService,
+                 ShipmentService shipmentService,
+                 AnalyticsService analyticsService,
+                 EmailService emailService) {
         this.orderService = orderService;
         this.shipmentService = shipmentService;
         this.analyticsService = analyticsService;
