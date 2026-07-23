@@ -15,7 +15,6 @@ public class RunnableThread {
         System.out.println(Thread.currentThread().getName()+" Main");
     }
 
-
 }
 
 class ThreadA implements Runnable {
