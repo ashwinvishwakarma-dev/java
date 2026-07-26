@@ -1,6 +1,6 @@
 package leetcode.linkedlist;
 
-public class DetectCycle {
+public class DetectCycle141 {
     public static void main(String[] args) {
 
         ListNode head = new ListNode(5, null);
@@ -23,10 +23,6 @@ public class DetectCycle {
     }
 
     public static boolean hasCycle(ListNode head) {
-
-        if (head.next == null) {
-            return false;
-        }
 
         ListNode slowNode = head;
         ListNode fastNode = head;
