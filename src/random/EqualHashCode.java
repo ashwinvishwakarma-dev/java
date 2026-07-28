@@ -5,10 +5,10 @@ import java.util.Objects;
 
 public class EqualHashCode {
     public static void main(String[] args) {
-        Employee s1 = new Employee(1,"Ashwin");
-        Employee s2 = new Employee(1,"Shivam");
+        Employee1 s1 = new Employee1(1, "Ashwin");
+        Employee1 s2 = new Employee1(1, "Shivam");
 
-        HashSet<Employee> set = new HashSet<>();
+        HashSet<Employee1> set = new HashSet<>();
 
         set.add(s1);
         set.add(s2);
@@ -17,11 +17,11 @@ public class EqualHashCode {
     }
 }
 
-class Employee {
+class Employee1 {
     int id;
     String name;
 
-    Employee(int id, String name) {
+    Employee1(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -33,7 +33,7 @@ class Employee {
         if (object == null || getClass() != object.getClass()) {
             return false;
         }
-        Employee e = (Employee) object;
+        Employee1 e = (Employee1) object;
         return id == e.id;
     }
 

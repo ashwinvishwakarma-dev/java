@@ -32,7 +32,6 @@ public class Singleton {
 
         Singleton s3 = constructor.newInstance();
 
-
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s3);
