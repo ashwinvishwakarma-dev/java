@@ -36,7 +36,6 @@ public class WordPattern290 {
         }
 
         for (int i = 0; i < str.length; i++) {
-
             if (map.containsKey(pattern.charAt(i))) {
                 if (!str[i].equals(map.get(pattern.charAt(i)))) {
                     return false;
@@ -44,9 +43,7 @@ public class WordPattern290 {
             } else {
                 map.put(pattern.charAt(i), str[i]);
             }
-
         }
-
         return true;
     }
 
@@ -79,7 +76,6 @@ public class WordPattern290 {
                     return false;
                 }
             }
-
             wordToChar.put(word, character);
         }
         return true;

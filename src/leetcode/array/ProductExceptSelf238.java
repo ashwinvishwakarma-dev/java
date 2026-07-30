@@ -20,7 +20,6 @@ public class ProductExceptSelf238 {
             prefix[i] = prefix[i - 1] * nums[i - 1];
         }
         for (int i = nums.length - 1; i >= 0; i--) {
-
             prefix[i] = prefix[i] * suffix;
             suffix = suffix * nums[i];
         }
