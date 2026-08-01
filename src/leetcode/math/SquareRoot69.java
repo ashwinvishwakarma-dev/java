@@ -1,6 +1,6 @@
 package leetcode.math;
 
-public class SquareRoot {
+public class SquareRoot69 {
 	public static void main(String[] args) {
 		System.out.println(mySqrt(2147483647));
 	}

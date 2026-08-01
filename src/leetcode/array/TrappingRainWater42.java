@@ -2,7 +2,7 @@ package leetcode.array;
 
 public class TrappingRainWater42 {
 	public static void main(String[] args) {
-		int[] num = {4,2,0,3,2,5};
+		int[] num = {4, 2, 0, 3, 2, 5};
 		System.out.println(trap(num));
 	}
 	
@@ -20,8 +20,8 @@ public class TrappingRainWater42 {
 		for (int i = 1; i < arrLength; i++) {
 			leftMax = Math.max(height[i - 1], leftMax);
 			leftArr[i] = leftMax;
-			
 		}
+		
 		for (int i = arrLength - 2; i >= 0; i--) {
 			rightMax = Math.max(height[i + 1], rightMax);
 			rightArr[i] = rightMax;
