@@ -15,13 +15,11 @@ interface PaymentStrategy {
 }
 
 class UPIPayment implements PaymentStrategy {
-
     @Override
     public void pay(double amount) {
         System.out.println("Paid through UPI:- " + amount);
     }
 }
-
 
 class PaymentService {
 
