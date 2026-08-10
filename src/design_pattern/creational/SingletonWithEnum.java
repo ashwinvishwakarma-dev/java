@@ -6,12 +6,10 @@ public class SingletonWithEnum {
         EnumSingleton s1 = EnumSingleton.getInstance();
         System.out.println(s1);
     }
-
 }
 
 enum EnumSingleton {
     INSTANCE;
-
     public static EnumSingleton getInstance() {
         return INSTANCE ;
     }

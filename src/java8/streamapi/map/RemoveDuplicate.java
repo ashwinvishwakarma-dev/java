@@ -33,7 +33,6 @@ public class RemoveDuplicate {
 		List<Integer> result = new ArrayList<>();
 		
 		for (int i = list.size() - 1; i >= 0; i--) {
-			
 			if (seen.add(list.get(i))) {
 				result.add(list.get(i));
 			}

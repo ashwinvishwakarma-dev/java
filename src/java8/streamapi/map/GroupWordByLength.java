@@ -10,9 +10,7 @@ public class GroupWordByLength {
         List<String> words = Arrays.asList("java", "spring", "java", "kafka", "stream", "api", "spring", "java");
 
         HashMap<Integer,List<String>> frequency = (HashMap<Integer, List<String>>) words.stream()
-                .collect(Collectors.groupingBy(
-                        String::length
-                ));
+                .collect(Collectors.groupingBy(String::length));
 
         System.out.println(frequency);
     }

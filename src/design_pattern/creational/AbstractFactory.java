@@ -24,7 +24,6 @@ interface CheckBox {
 }
 
 class LightButton implements Button {
-
     @Override
     public void submit() {
         System.out.println("Light Button");
@@ -32,7 +31,6 @@ class LightButton implements Button {
 }
 
 class LightCheckBox implements CheckBox {
-
     @Override
     public void check() {
         System.out.println("Light CheckBox");
@@ -40,7 +38,6 @@ class LightCheckBox implements CheckBox {
 }
 
 class DarkButton implements Button {
-
     @Override
     public void submit() {
         System.out.println("Dark Button");
@@ -48,10 +45,9 @@ class DarkButton implements Button {
 }
 
 class DarkCheckBox implements CheckBox {
-
     @Override
     public void check() {
-        System.out.println("Dark CheckBox   ");
+        System.out.println("Dark CheckBox");
     }
 }
 
