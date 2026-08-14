@@ -29,12 +29,12 @@ public class Symmetric101 {
 			return false;
 		}
 		
-		if (left.val !=right.val){
+		if (left.val != right.val) {
 			return false;
 		}
 		
-		boolean leftWithRight = isMirror(left.left,right.right);
-		boolean rightWithLeft = isMirror(left.right,right.left);
+		boolean leftWithRight = isMirror(left.left, right.right);
+		boolean rightWithLeft = isMirror(left.right, right.left);
 		
 		return leftWithRight && rightWithLeft;
 	}
