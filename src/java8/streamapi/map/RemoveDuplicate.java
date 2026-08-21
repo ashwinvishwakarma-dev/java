@@ -10,8 +10,8 @@ public class RemoveDuplicate {
 		usingStream(list);
 		usingSet(list);
 		
-		
 	}
+	
 	
 	public static void usingStream(List<Integer> list) {
 		HashMap<Integer, Integer> map = new HashMap<>();
