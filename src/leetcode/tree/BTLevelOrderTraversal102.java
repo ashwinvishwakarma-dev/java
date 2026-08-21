@@ -22,7 +22,6 @@ public class BTLevelOrderTraversal102 {
 			return listOfList;
 		}
 		
-		
 		Queue<TreeNode> queue = new LinkedList<>();
 		queue.add(root);
 		
