@@ -1,4 +1,4 @@
-package leetcode.bst;
+package leetcode.binarysearch;
 
 public class SearchInsertPosition35 {
 	public static void main(String[] args) {
