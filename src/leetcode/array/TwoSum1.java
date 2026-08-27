@@ -2,7 +2,7 @@ package leetcode.array;
 
 import java.util.Arrays;
 
-public class TwoSum {
+public class TwoSum1 {
     public static void main(String[] args) {
         int[] numbers = {-1, 0};
         int target = -11;

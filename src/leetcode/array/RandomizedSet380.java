@@ -25,7 +25,6 @@ class RandomizedSet {
     List<Integer> list;
     Random random;
 
-
     public RandomizedSet() {
         map = new HashMap<>();
         list = new ArrayList<>();
@@ -39,7 +38,6 @@ class RandomizedSet {
         map.put(val, list.size());
         list.add(val);
         return true;
-
     }
 
     public boolean remove(int val) {
