@@ -10,11 +10,13 @@ public class MaximumSubarray53 {
 		int maxSum = nums[0];
 		int currentSum = nums[0];
 		
-		for (int current : nums) {
-			currentSum = currentSum + current;
+		for (int i = 0; i < nums.length; i++) {
+			int current = nums[i];
+			currentSum = currentSum + nums[i];
 			currentSum = Math.max(current, currentSum);
 			maxSum = Math.max(currentSum, maxSum);
 		}
+		
 		return maxSum;
 	}
 }
