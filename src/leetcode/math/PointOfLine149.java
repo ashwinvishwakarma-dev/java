@@ -39,7 +39,6 @@ public class PointOfLine149 {
 				maxCount = Math.max(maxCount, count + 1);
 			}
 		}
-		
 		return maxCount;
 	}
 }
