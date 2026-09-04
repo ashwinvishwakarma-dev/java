@@ -13,8 +13,8 @@ public class PointOfLine149 {
 		int maxCount = 0;
 		int rowLen = points.length;
 		
-		if (rowLen == 1) {
-			return 1;
+		if (rowLen <= 2) {
+			return rowLen;
 		}
 		
 		for (int i = 0; i < rowLen - 1; i++) {
